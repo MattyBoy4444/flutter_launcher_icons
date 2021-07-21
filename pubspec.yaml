@@ -3,10 +3,15 @@ description: A package which simplifies the task of updating your Flutter app's 
 version: 0.9.0
 maintainer: Mark O'Sullivan (@MarkOSullivan94)
 homepage: https://github.com/fluttercommunity/flutter_launcher_icons
+publish_to: none
 
 dependencies:
   args: 2.0.0
-  image: ^3.0.1
+  # image: ^3.0.1
+  image:
+    git:
+      url: https://github.com/brendan-duncan/image.git
+      ref: master
   path: ^1.8.0
   yaml: ^3.1.0
 
